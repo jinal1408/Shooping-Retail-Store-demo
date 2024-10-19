@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooping Retail Store - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-yFb4f+D5veXp+jzbWDZIw4Qjr3Cr9QeyzTnQoLe6qtmbZjJ5XGppLwRZaDJeaQQT7Pvh1VVJTVk0H9bSzh0j8Q=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .product-card-body {
+            padding: 10px;
+        }
+
+        .product-card-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-card-price {
+            font-size: 1.2rem;
+            color: #007bff;
+        }
+
+        .btn-add-to-cart {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn-add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">Shooping Retail Store</a>
+    </div>
+</nav>
+
+<!-- Product Listing Section -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="saree.webp" class="card-img-top" alt="Product Image">
+                <div class="product-card-body">
+                    <h5 class="product-card-title">Indian Saree</h5>
+                    <p class="product-card-price" style="text-decoration: none; color: black;">RS 49900</p>
+                    <a href="Indian_Saree.html">View details</a><br/>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="krutis.webp" class="card-img-top" alt="Product Image">
+                <div class="product-card-body">
+                    <h5 class="product-card-title">Indian Krutis</h5>
+                    <a href="Indian_Krutis.html">View details</a><br/>
+                    <p class="product-card-price" style="text-decoration: none; color: black;">RS 5000</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="kid.webp" class="card-img-top" alt="Product Image">
+                <div class="product-card-body">
+                    <h5 class="product-card-title">Kid Cloths</h5>
+                    <a href="Kid_Cloths.html">View details</a><br/>
+                    <p class="product-card-price" style="text-decoration: none; color: black;">Rs 1500</p>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="western.jpeg" class="card-img-top" alt="Product Image">
+                <div class="product-card-body">
+                    <h5 class="product-card-title">Party Cloths</h5>
+                    <p class="product-card-price" style="text-decoration: none; color: black;">Rs 4500</p>
+                    <a href="Party_Cloths.html">View details</a><br/>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="product-card">
+                <img src="top.webp" class="card-img-top" alt="Product Image">
+                <div class="product-card-body">
+                    <h5 class="product-card-title">Formal Tops</h5>
+                    <p class="product-card-price" style="text-decoration: none; color: black;">Rs 700</p>
+                    <a href="Formal_Tops.html">View details</a><br/>
+                    <button class="btn btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Shooping Retail Store. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
